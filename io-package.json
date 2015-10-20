@@ -1,0 +1,34 @@
+{
+    "common": {
+        "name":                     "vis-iobroker.vis-keyboard",
+        "version": "0.0.1",
+        "title":                    "ioBroker Visualisation - iobroker.vis-keyboard Widgets",
+        "desc": {
+            "en":                   "iobroker.vis-keyboard Widgets for ioBroker.vis",
+            "de":                   "iobroker.vis-keyboard Widgets für ioBroker.vis",
+            "ru":                   "iobroker.vis-keyboard Widgets для ioBroker.vis"
+        },
+        "platform":                 "Javascript/Node.js",
+        "icon":                     "iobroker.vis-keyboard.png",
+        "enabled":                  true,
+        "mode":                     "once",
+        "extIcon":                  "https://github.com/ioBroker/ioBroker.js-controller/raw/master/adapter/example/admin/example.png",
+        "keywords":                 ["iobroker.vis-keyboard", "vis", "GUI", "graphical", "scada"],
+        "readme":                   "https://github.com/ioBroker/ioBroker.vis-iobroker.vis-keyboard/blob/master/README.md",
+        "authors": [
+            "Steffen Schorling <steffen.schorling@googlemail.com>"
+        ],
+        "localLink":                "%web_protocol%://%ip%:%web_port%/vis/edit.html",
+        "license":                  "MIT",
+        "dependencies":             ["vis"],
+        "onlyWWW":                  true,
+        "singleton":                true,
+        "type":                     "vis",
+		"restartAdapters":          ["vis"]
+    },
+    "native": {
+        "dependencies":          []
+    },
+    "instanceObjects": [
+    ]
+}
