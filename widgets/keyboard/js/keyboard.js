@@ -1,7 +1,7 @@
 /*
     ioBroker.vis iobroker.vis-keyboard Widget-Set
 
-    version: "0.0.1"
+    version: "0.0.2"
 
     Copyright 10.2015-2016 Steffen Schorling<steffen.schorling@googlemail.com>
 
@@ -19,7 +19,7 @@ if (vis.editMode) {
 
 // this code can be placed directly in iobroker.vis-keyboard.html
 vis.binds.keyboard = {
-    version: "0.0.1",
+    version: "0.0.2",
     showVersion: function () {
         if (vis.binds.keyboard.version) {
             console.log('Version iobroker.vis-keyboard: ' + vis.binds.keyboard.version);

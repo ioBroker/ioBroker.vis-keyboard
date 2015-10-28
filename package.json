@@ -1,7 +1,7 @@
 {
   "name": "iobroker.vis-keyboard",
   "description": "iobroker.vis-keyboard Widgets for ioBroker.vis",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Steffen Schorling",
     "email": "steffen.schorling@googlemail.com"

@@ -1,7 +1,7 @@
 {
     "common": {
         "name":                     "vis-iobroker.vis-keyboard",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "title":                    "ioBroker Visualisation - iobroker.vis-keyboard Widgets",
         "desc": {
             "en":                   "iobroker.vis-keyboard Widgets for ioBroker.vis",
