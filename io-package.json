@@ -12,7 +12,7 @@
         "icon":                     "iobroker.vis-keyboard.png",
         "enabled":                  true,
         "mode":                     "once",
-        "extIcon":                  "https://github.com/ioBroker/ioBroker.js-controller/raw/master/adapter/example/admin/example.png",
+        "extIcon":                  "https://github.com/ioBroker/ioBroker.vis-keyboard/admin/keyboard.png",
         "keywords":                 ["iobroker.vis-keyboard", "vis", "GUI", "graphical", "scada"],
         "readme":                   "https://github.com/ioBroker/ioBroker.vis-iobroker.vis-keyboard/blob/master/README.md",
         "authors": [

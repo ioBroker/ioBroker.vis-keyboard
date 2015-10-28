@@ -1,15 +1,25 @@
-![Logo](widgets/iobroker.vis-keyboard/img/prev_vkb.png)
+![Logo](admin/keyboard.png)
 ioBroker.vis-iobroker.vis-keyboard
 ============
 
 
-![Screenshot](widgets/iobroker.vis-keyboard/img/prev_vkb.png)
+![Screenshot](img/widgets.png)
 
-##Dieses Widget, ist als Widget für die _project View gedacht. Es generiert eine virtuelle Tastatur.
-Diese ist besonders von vorteil auf Betriebsystemen die nicht Touch optimiert sind oder eine eingeschränkte Tastatur gewünscht ist.
+![Screenshot](img/numpad.png)
 
+Used very good jquery plugin from Jeremy Satterfield. (Original by Jeremy Satterfield, updated & maintained by Rob Garrison)
+
+github - http://github.com/Mottie/Keyboard
+
+##Usage
+You can place this widget on view and all widgets with input fields will have virtual keyboard. You must place widget on every view.
+
+Additionally you can add to widget class ```keyboard-num``` to force using numeric keyboard or ```keyboard-all``` to force using full-text keyboard.
 
 ## Changelog
+
+### 0.0.2 (2015-10-28)
+- (bluefox) update plugin
 
 ### 0.0.1 (2015-10-21)
 - (smiling_Jack) initial checkin

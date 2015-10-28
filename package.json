@@ -1,5 +1,5 @@
 {
-  "name": "iobroker.vis-iobroker.vis-keyboard",
+  "name": "iobroker.vis-keyboard",
   "description": "iobroker.vis-keyboard Widgets for ioBroker.vis",
   "version": "0.0.1",
   "author": {
@@ -9,21 +9,21 @@
   "contributors": [
     "Steffen Schorling <steffen.schorling@googlemail.com>"
   ],
-  "homepage": "https://github.com/ioBroker/ioBroker.vis-iobroker.vis-keyboard",
+  "homepage": "https://github.com/ioBroker/ioBroker.vis-keyboard",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ioBroker/ioBroker.vis-iobroker.vis-keyboard"
+    "url": "https://github.com/ioBroker/ioBroker.vis-keyboard"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/ioBroker/ioBroker.vis-iobroker.vis-keyboard/blob/master/LICENSE"
+      "url": "https://github.com/ioBroker/ioBroker.vis-keyboard/blob/master/LICENSE"
     }
   ],
   "keywords": [
     "ioBroker",
     "GUI",
-	"iobroker.vis-keyboard vis"
+	"keyboard"
   ],
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -37,7 +37,7 @@
     "grunt-exec": "^0.4.6"
   },
   "bugs": {
-    "url": "https://github.com/ioBroker/ioBroker.vis-iobroker.vis-keyboard/issues"
+    "url": "https://github.com/ioBroker/ioBroker.vis-keyboard/issues"
   },
   "main": "widgets/iobroker.vis-keyboard.html",
   "scripts": {

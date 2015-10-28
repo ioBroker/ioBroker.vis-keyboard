@@ -1,0 +1,60 @@
+<!--
+    ioBroker.vis iobroker.vis-keyboard Widget-Set
+
+    version: "0.0.1"
+
+    Copyright 10.2015-2016 Steffen Schorling<steffen.schorling@googlemail.com>
+-->
+<link rel="stylesheet" type="text/css" href="widgets/keyboard/css/keyboard-previewkeyset.min.css"/>
+<link rel="stylesheet" type="text/css" href="widgets/keyboard/css/keyboard.min.css"/>
+
+<script type="text/javascript"          src="widgets/keyboard/js/jquery.keyboard.min.js"></script>
+<script type="text/javascript"          src="widgets/keyboard/languages/de.min.js"></script>
+<script type="text/javascript"          src="widgets/keyboard/languages/ru.min.js"></script>
+<script type="text/javascript"          src="widgets/keyboard/layouts/german.min.js"></script>
+<script type="text/javascript"          src="widgets/keyboard/layouts/russian.min.js"></script>
+<script type="text/javascript"          src="widgets/keyboard/js/keyboard.js"></script>
+
+<script id="tplKeyboardAll"
+		type="text/ejs"
+		class="vis-tpl"
+		data-vis-prev='<img src="widgets/keyboard/img/prev_vkb.png"></img>'
+		data-vis-set="keyboard"
+		data-vis-type="keyboard"
+		data-vis-name="Virtual Keyboard"
+		data-vis-attrs="layout/select,german,english,russian">
+    <div class="vis-widget <%== this.data.attr('class') %>" style=" width: 190px; height: 22px;" id="<%= this.data.attr('wid') %>">
+        <div class="vis-widget-body" <%= (el) -> vis.binds.keyboard.all(el, data, this.view) %>>
+			<div style="border: 1px solid red; background: #ffffff">Virtual Keyboard for view <%= this.view %></div>
+        </div>
+    </div>
+</script>
+
+<script id="tplKeyboardWidget"
+        type="text/ejs"
+        class="vis-tpl"
+        data-vis-prev='<img src="widgets/keyboard/img/prev_vkb.png"></img>'
+        data-vis-set="keyboard"
+        data-vis-type="keyboard"
+        data-vis-name="Keyboard for Widget"
+        data-vis-attrs="wname/widget;layout/select,de,english,ru,numpad">
+    <div class="vis-widget <%== this.data.attr('class') %>" style=" width: 220px; height: 22px;" id="<%= this.data.attr('wid') %>">
+        <div class="vis-widget-body" <%= (el) -> vis.binds.keyboard.one(el, data, this.view) %>>
+			<div style="border: 1px solid blue; background: #ffffff">Virtual Keyboard for <%= this.data.attr('wname') %></div>
+        </div>
+    </div>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
