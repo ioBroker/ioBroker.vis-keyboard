@@ -1,6 +1,6 @@
 {
     "common": {
-        "name":                     "vis-iobroker.vis-keyboard",
+        "name":                     "vis-keyboard",
         "version": "0.0.2",
         "title":                    "ioBroker Visualisation - iobroker.vis-keyboard Widgets",
         "desc": {
@@ -9,10 +9,10 @@
             "ru":                   "iobroker.vis-keyboard Widgets для ioBroker.vis"
         },
         "platform":                 "Javascript/Node.js",
-        "icon":                     "iobroker.vis-keyboard.png",
+        "icon":                     "keyboard.png",
         "enabled":                  true,
         "mode":                     "once",
-        "extIcon":                  "https://github.com/ioBroker/ioBroker.vis-keyboard/admin/keyboard.png",
+        "extIcon":                  "https://raw.githubusercontent.com/ioBroker/ioBroker.vis-keyboard/master/admin/keyboard.png",
         "keywords":                 ["iobroker.vis-keyboard", "vis", "GUI", "graphical", "scada"],
         "readme":                   "https://github.com/ioBroker/ioBroker.vis-iobroker.vis-keyboard/blob/master/README.md",
         "authors": [
