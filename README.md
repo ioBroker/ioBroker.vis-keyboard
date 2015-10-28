@@ -1,5 +1,5 @@
 ![Logo](admin/keyboard.png)
-ioBroker.vis-iobroker.vis-keyboard
+ioBroker.vis-keyboard
 ============
 
 
