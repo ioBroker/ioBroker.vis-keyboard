@@ -14,7 +14,7 @@
         "mode":                     "once",
         "extIcon":                  "https://raw.githubusercontent.com/ioBroker/ioBroker.vis-keyboard/master/admin/keyboard.png",
         "keywords":                 ["iobroker.vis-keyboard", "vis", "GUI", "graphical", "scada"],
-        "readme":                   "https://github.com/ioBroker/ioBroker.vis-iobroker.vis-keyboard/blob/master/README.md",
+        "readme":                   "https://github.com/ioBroker/ioBroker.vis-keyboard/blob/master/README.md",
         "authors": [
             "Steffen Schorling <steffen.schorling@googlemail.com>"
         ],
