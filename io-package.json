@@ -1,34 +1,43 @@
 {
     "common": {
-        "name":                     "vis-keyboard",
+        "name": "vis-keyboard",
         "version": "0.0.2",
-        "title":                    "ioBroker Visualisation - iobroker.vis-keyboard Widgets",
+        "title": "ioBroker Visualisation - iobroker.vis-keyboard Widgets",
         "desc": {
-            "en":                   "iobroker.vis-keyboard Widgets for ioBroker.vis",
-            "de":                   "iobroker.vis-keyboard Widgets für ioBroker.vis",
-            "ru":                   "iobroker.vis-keyboard Widgets для ioBroker.vis"
+            "en": "iobroker.vis-keyboard Widgets for ioBroker.vis",
+            "de": "iobroker.vis-keyboard Widgets für ioBroker.vis",
+            "ru": "iobroker.vis-keyboard Widgets для ioBroker.vis"
         },
-        "platform":                 "Javascript/Node.js",
-        "icon":                     "keyboard.png",
-        "enabled":                  true,
-        "mode":                     "once",
-        "extIcon":                  "https://raw.githubusercontent.com/ioBroker/ioBroker.vis-keyboard/master/admin/keyboard.png",
-        "keywords":                 ["iobroker.vis-keyboard", "vis", "GUI", "graphical", "scada"],
-        "readme":                   "https://github.com/ioBroker/ioBroker.vis-keyboard/blob/master/README.md",
+        "platform": "Javascript/Node.js",
+        "icon": "keyboard.png",
+        "enabled": true,
+        "mode": "once",
+        "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.vis-keyboard/master/admin/keyboard.png",
+        "keywords": [
+            "iobroker.vis-keyboard",
+            "vis",
+            "GUI",
+            "graphical",
+            "scada"
+        ],
+        "readme": "https://github.com/ioBroker/ioBroker.vis-keyboard/blob/master/README.md",
         "authors": [
             "Steffen Schorling <steffen.schorling@googlemail.com>"
         ],
-        "localLink":                "%web_protocol%://%ip%:%web_port%/vis/edit.html",
-        "license":                  "MIT",
-        "dependencies":             ["vis"],
-        "onlyWWW":                  true,
-        "singleton":                true,
-        "type":                     "vis",
-		"restartAdapters":          ["vis"]
+        "localLink": "%web_protocol%://%ip%:%web_port%/vis/edit.html",
+        "license": "MIT",
+        "dependencies": [
+            "vis"
+        ],
+        "onlyWWW": true,
+        "singleton": true,
+        "type": "visualization-widgets",
+        "restartAdapters": [
+            "vis"
+        ]
     },
     "native": {
-        "dependencies":          []
+        "dependencies": []
     },
-    "instanceObjects": [
-    ]
+    "instanceObjects": []
 }
