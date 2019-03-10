@@ -17,7 +17,7 @@ You can place this widget on view and all widgets with input fields will have vi
 Additionally you can add to widget class ```keyboard-num``` to force using numeric keyboard or ```keyboard-all``` to force using full-text keyboard.
 
 ## Changelog
-
+![Number of Installations](http://iobroker.live/badges/vis-keyboard-installed.svg) ![Number of Installations](http://iobroker.live/badges/vis-keyboard-stable.svg) 
 ### 0.0.2 (2015-10-28)
 - (bluefox) update plugin
 
