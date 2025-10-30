@@ -1,7 +1,7 @@
 {
   "name": "iobroker.vis-keyboard",
   "description": "iobroker.vis-keyboard Widgets for ioBroker.vis",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": {
     "name": "Steffen Schorling",
     "email": "steffen.schorling@googlemail.com"
@@ -26,24 +26,31 @@
     "keyboard"
   ],
   "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-replace": "^1.0.1",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-jscs": "^3.0.1",
-    "grunt-http": "^2.2.0",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-compress": "^1.4.3",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-exec": "^3.0.0",
-    "mocha": "^4.1.0",
-    "chai": "^4.1.2"
+    "@alcalzone/release-script": "^4.0.0",
+    "@alcalzone/release-script-plugin-iobroker": "^4.0.0",
+    "@alcalzone/release-script-plugin-license": "^4.0.0",
+    "@iobroker/eslint-config": "^2.2.0",
+    "@iobroker/vis-2-widgets-testing": "^1.0.6",
+    "mocha": "^11.7.4",
+    "chai": "^4.5.0"
   },
   "bugs": {
     "url": "https://github.com/ioBroker/ioBroker.vis-keyboard/issues"
   },
   "main": "widgets/iobroker.vis-keyboard.html",
+  "files": [
+    "admin/",
+    "widgets/",
+    "img/",
+    "io-package.json",
+    "LICENSE"
+  ],
   "scripts": {
-    "test": "node node_modules/mocha/bin/mocha --exit"
+    "test": "mocha --exit",
+    "release": "release-script",
+    "release-patch": "release-script patch --yes",
+    "release-minor": "release-script minor --yes",
+    "release-major": "release-script major --yes"
   },
   "license": "MIT",
   "dependencies": {

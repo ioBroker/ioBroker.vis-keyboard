@@ -1,43 +1,86 @@
 {
-    "common": {
-        "name": "vis-keyboard",
-        "version": "0.0.2",
-        "title": "ioBroker Visualisation - iobroker.vis-keyboard Widgets",
-        "desc": {
-            "en": "iobroker.vis-keyboard Widgets for ioBroker.vis",
-            "de": "iobroker.vis-keyboard Widgets für ioBroker.vis",
-            "ru": "iobroker.vis-keyboard Widgets для ioBroker.vis"
-        },
-        "platform": "Javascript/Node.js",
-        "icon": "keyboard.png",
-        "enabled": true,
-        "mode": "once",
-        "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.vis-keyboard/master/admin/keyboard.png",
-        "keywords": [
-            "iobroker.vis-keyboard",
-            "vis",
-            "GUI",
-            "graphical",
-            "scada"
-        ],
-        "readme": "https://github.com/ioBroker/ioBroker.vis-keyboard/blob/master/README.md",
-        "authors": [
-            "Steffen Schorling <steffen.schorling@googlemail.com>"
-        ],
-        "localLink": "%web_protocol%://%ip%:%web_port%/vis/edit.html",
-        "license": "MIT",
-        "dependencies": [
-            "vis"
-        ],
-        "onlyWWW": true,
-        "singleton": true,
-        "type": "visualization-widgets",
-        "restartAdapters": [
-            "vis"
-        ]
+  "common": {
+    "name": "vis-keyboard",
+    "version": "0.0.3",
+    "title": "ioBroker Visualisation - iobroker.vis-keyboard Widgets",
+    "titleLang": {
+      "en": "vis-keyboard Widgets",
+      "de": "vis-keyboard Widgets",
+      "ru": "vis-keyboard Widgets",
+      "es": "vis-keyboard Widgets",
+      "fr": "vis-keyboard Widgets",
+      "it": "vis-keyboard Widgets",
+      "pt": "vis-keyboard Widgets",
+      "nl": "vis-keyboard Widgets",
+      "pl": "vis-keyboard Widgets",
+      "zh-cn": "vis-keyboard Widgets",
+      "uk": "vis-keyboard Widgets"
     },
-    "native": {
-        "dependencies": []
+    "desc": {
+      "en": "Keyboard Widgets for ioBroker.vis",
+      "de": "Keyboard Widgets für ioBroker.vis",
+      "ru": "Keyboard Widgets для ioBroker.vis",
+      "es": "Widgets de teclado para ioBroker.vis",
+      "fr": "Widgets de clavier pour ioBroker.vis",
+      "it": "Widget della tastiera per ioBroker.vis",
+      "pt": "Widgets de teclado para ioBroker.vis",
+      "nl": "Toetsenbord-widgets voor ioBroker.vis",
+      "pl": "Widżety klawiatury dla ioBroker.vis",
+      "zh-cn": "ioBroker.vis的键盘小部件",
+      "uk": "Keyboard Widgets для ioBroker.vis"
     },
-    "instanceObjects": []
+    "news": {
+      "0.0.3": {
+        "en": "updated packages",
+        "de": "aktualisierte pakete",
+        "ru": "обновленные пакеты",
+        "pt": "pacotes atualizados",
+        "nl": "bijgewerkte pakketten",
+        "fr": "paquets mis à jour",
+        "it": "pacchetti aggiornati",
+        "es": "paquetes actualizados",
+        "pl": "zaktualizowane pakiety",
+        "uk": "оновлені пакети",
+        "zh-cn": "更新软件包"
+      }
+    },
+    "licenseInformation": {
+      "license": "MIT",
+      "type": "free"
+    },
+    "platform": "Javascript/Node.js",
+    "icon": "keyboard.png",
+    "enabled": true,
+    "mode": "once",
+    "tier": 3,
+    "extIcon": "https://raw.githubusercontent.com/ioBroker/ioBroker.vis-keyboard/master/admin/keyboard.png",
+    "keywords": [
+      "iobroker.vis-keyboard",
+      "vis",
+      "GUI",
+      "graphical",
+      "scada"
+    ],
+    "readme": "https://github.com/ioBroker/ioBroker.vis-keyboard/blob/master/README.md",
+    "authors": [
+      "Steffen Schorling <steffen.schorling@googlemail.com>"
+    ],
+    "dependencies": [
+      "vis"
+    ],
+    "onlyWWW": true,
+    "adminUI": {
+      "config": "none"
+    },
+    "singleton": true,
+    "type": "visualization-widgets",
+    "restartAdapters": [
+      "vis",
+      "vis-2"
+    ]
+  },
+  "native": {
+    "dependencies": []
+  },
+  "instanceObjects": []
 }

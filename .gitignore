@@ -3,3 +3,5 @@
 
 #ignore .commitinfo created by ioBroker release script
 .commitinfo
+/package-lock.json
+
