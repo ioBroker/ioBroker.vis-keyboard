@@ -1,7 +1,5 @@
 ![Logo](admin/keyboard.png)
-ioBroker.vis-keyboard
-============
-
+#ioBroker.vis-keyboard
 
 ![Screenshot](img/widgets.png)
 
@@ -12,9 +10,9 @@ Used very good jquery plugin from Jeremy Satterfield. (Original by Jeremy Satter
 github - http://github.com/Mottie/Keyboard
 
 ##Usage
-You can place this widget on view and all widgets with input fields will have virtual keyboard. You must place widget on every view.
+You can place this widget on view and all widgets with input fields will have a virtual keyboard. You must place the widget on every view.
 
-Additionally you can add to widget class ```keyboard-num``` to force using numeric keyboard or ```keyboard-all``` to force using full-text keyboard.
+Additionally, you can add to widget class `keyboard-num` to force using numeric keyboard or `keyboard-all` to force using full-text keyboard.
 
 ## Changelog
 ![Number of Installations](http://iobroker.live/badges/vis-keyboard-installed.svg) ![Number of Installations](http://iobroker.live/badges/vis-keyboard-stable.svg) 

@@ -1,52 +1,52 @@
 {
-  "name": "iobroker.vis-keyboard",
-  "description": "iobroker.vis-keyboard Widgets for ioBroker.vis",
-  "version": "0.0.2",
-  "author": {
-    "name": "Steffen Schorling",
-    "email": "steffen.schorling@googlemail.com"
-  },
-  "contributors": [
-    "Steffen Schorling <steffen.schorling@googlemail.com>"
-  ],
-  "homepage": "https://github.com/ioBroker/ioBroker.vis-keyboard",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ioBroker/ioBroker.vis-keyboard"
-  },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/ioBroker/ioBroker.vis-keyboard/blob/master/LICENSE"
+    "name": "iobroker.vis-keyboard",
+    "description": "iobroker.vis-keyboard Widgets for ioBroker.vis",
+    "version": "0.0.2",
+    "author": {
+        "name": "Steffen Schorling",
+        "email": "steffen.schorling@googlemail.com"
+    },
+    "contributors": [
+        "Steffen Schorling <steffen.schorling@googlemail.com>"
+    ],
+    "homepage": "https://github.com/ioBroker/ioBroker.vis-keyboard",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ioBroker/ioBroker.vis-keyboard"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/ioBroker/ioBroker.vis-keyboard/blob/master/LICENSE"
+        }
+    ],
+    "keywords": [
+        "ioBroker",
+        "GUI",
+        "keyboard"
+    ],
+    "devDependencies": {
+        "@iobroker/eslint-config": "^2.2.0",
+        "@iobroker/vis-2-widgets-testing": "^1.0.6",
+        "mocha": "^11.7.4",
+        "chai": "^4.5.0"
+    },
+    "bugs": {
+        "url": "https://github.com/ioBroker/ioBroker.vis-keyboard/issues"
+    },
+    "main": "widgets/iobroker.vis-keyboard.html",
+    "files": [
+        "admin/",
+        "widgets/",
+        "img/",
+        "io-package.json",
+        "LICENSE"
+    ],
+    "scripts": {
+        "test": "node node_modules/mocha/bin/mocha --exit"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@iobroker/adapter-core": "^1.0.3"
     }
-  ],
-  "keywords": [
-    "ioBroker",
-    "GUI",
-    "keyboard"
-  ],
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-replace": "^1.0.1",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-jscs": "^3.0.1",
-    "grunt-http": "^2.2.0",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-compress": "^1.4.3",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-exec": "^3.0.0",
-    "mocha": "^4.1.0",
-    "chai": "^4.1.2"
-  },
-  "bugs": {
-    "url": "https://github.com/ioBroker/ioBroker.vis-keyboard/issues"
-  },
-  "main": "widgets/iobroker.vis-keyboard.html",
-  "scripts": {
-    "test": "node node_modules/mocha/bin/mocha --exit"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "@iobroker/adapter-core": "^1.0.3"
-  }
 }

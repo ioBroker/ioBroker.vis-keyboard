@@ -11,9 +11,9 @@
 // add translations for edit mode
 if (vis.editMode) {
     $.extend(true, systemDictionary, {
-        "myColor":         {"en": "Color",        "de": "Farbe",        "ru": "Цвет"},
-        "layout":          {"en": "Layout",       "de": "Layout",       "ru": "Раскладка"},
-        "wname":           {"en": "Widget name",  "de": "Widget-Name",  "ru": "Имя виджета"}
+        "myColor": {"en": "Color",        "de": "Farbe",        "ru": "Цвет"},
+        "layout":  {"en": "Layout",       "de": "Layout",       "ru": "Раскладка"},
+        "wname":   {"en": "Widget name",  "de": "Widget-Name",  "ru": "Имя виджета"}
     });
 }
 
@@ -22,7 +22,7 @@ vis.binds.keyboard = {
     version: "0.0.2",
     showVersion: function () {
         if (vis.binds.keyboard.version) {
-            console.log('Version iobroker.vis-keyboard: ' + vis.binds.keyboard.version);
+            console.log(`Version iobroker.vis-keyboard: ${vis.binds.keyboard.version}`);
             vis.binds.keyboard.version = null;
         }
     },
@@ -36,14 +36,14 @@ vis.binds.keyboard = {
             return num();
         }
 
-        if ($('#' + id).hasClass('keyboard-num')) {
+        if ($(`#${id}`).hasClass('keyboard-num')) {
             num();
-        } else if ($('#' + id).hasClass('keyboard-all')) {
+        } else if ($(`#${id}`).hasClass('keyboard-all')) {
             all();
-        } else if ($('#' + id).find('input').attr('type')) {
-            var type = $('#' + id).find('input').attr('type');
+        } else if ($(`#${id}`).find('input').attr('type')) {
+            let type = $(`#${id}`).find('input').attr('type');
 
-            if (type == 'number') {
+            if (type === 'number') {
                 num();
             } else {
                 all();
@@ -51,10 +51,10 @@ vis.binds.keyboard = {
         }
 
         function all() {
-            $('#' + id).find('input').keyboard({
+            $(`#${id}`).find('input').keyboard({
                 layout: layout,
                 language: lang,
-                appendTo: $('#' + id).parent(),
+                appendTo: $(`#${id}`).parent(),
                 position: {
                     of:  window, // optional - null (attach to input/textarea) or a jQuery object (attach elsewhere)
                     my:  'center bottom',
@@ -65,13 +65,13 @@ vis.binds.keyboard = {
         }
 
         function num() {
-            $('#' + id).find('input').keyboard({
+            $(`#${id}`).find('input').keyboard({
                 layout: 'custom',
                 language: lang,
                 customLayout: {
                     'default': ['7 8 9', '4 5 6', '1 2 3', '{b} 0 {a}']
                 },
-                appendTo: $('#' + id).parent(),
+                appendTo: $(`#${id}`).parent(),
                 position: {
                     of:  window, // optional - null (attach to input/textarea) or a jQuery object (attach elsewhere)
                     my:  'center bottom',
@@ -83,30 +83,34 @@ vis.binds.keyboard = {
     },
     all: function (el, data, view) {
         if (!vis.editMode) {
-            var layout = vis.binds.keyboard.layouts[data.layout] || undefined;
-            var lang   = data.layout;
-            if (lang === 'numpad') lang = vis.language;
+            let layout = vis.binds.keyboard.layouts[data.layout] || undefined;
+            let lang   = data.layout;
+            if (lang === 'numpad') {
+                lang = vis.language;
+            }
 
             $(el).hide();
 
             // apply to yet existing widgets
-            $('#visview_' + view + ' .vis-widget').each(function () {
+            $(`#visview_${view} .vis-widget`).each(function () {
                 vis.binds.keyboard._applyForWidget($(this).attr('id'), layout, lang);
             });
 
             $(document).on('wid_added', function (e, id) {
-                if ($('#visview_' + view + ' #' + id).length) {
+                if ($(`#visview_${view} #${id}`).length) {
                     vis.binds.keyboard._applyForWidget(id, layout, lang);
                 }
             });
         }
     },
-    one: function (el, data, view) {
+    one: function (el, data) {
         if (!vis.editMode) {
-            var layout = vis.binds.keyboard.layouts[data.layout] || undefined;
-            var lang   = data.layout;
-            if (lang === 'numpad') lang = vis.language;
-            var widget = data.wname;
+            let layout = vis.binds.keyboard.layouts[data.layout] || undefined;
+            let lang = data.layout;
+            if (lang === 'numpad') {
+                lang = vis.language;
+            }
+            let widget = data.wname;
 
             $(el).hide();
             // apply to widget if yet exists
@@ -123,5 +127,5 @@ vis.binds.keyboard = {
         }
     }
 };
-	
+
 vis.binds.keyboard.showVersion();
