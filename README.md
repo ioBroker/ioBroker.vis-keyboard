@@ -1,5 +1,7 @@
 ![Logo](admin/keyboard.png)
-#ioBroker.vis-keyboard
+# ioBroker.vis-keyboard
+
+![Number of Installations](http://iobroker.live/badges/vis-keyboard-installed.svg) ![Number of Installations](http://iobroker.live/badges/vis-keyboard-stable.svg)
 
 ![Screenshot](img/widgets.png)
 
@@ -9,13 +11,19 @@ Used very good jquery plugin from Jeremy Satterfield. (Original by Jeremy Satter
 
 github - http://github.com/Mottie/Keyboard
 
-##Usage
+## Usage
 You can place this widget on view and all widgets with input fields will have a virtual keyboard. You must place the widget on every view.
 
 Additionally, you can add to widget class `keyboard-num` to force using numeric keyboard or `keyboard-all` to force using full-text keyboard.
 
+<!--
+	Placeholder for the next version (at the beginning of the line):
+	### **WORK IN PROGRESS**
+-->
 ## Changelog
-![Number of Installations](http://iobroker.live/badges/vis-keyboard-installed.svg) ![Number of Installations](http://iobroker.live/badges/vis-keyboard-stable.svg) 
+### **WORK IN PROGRESS**
+- (bluefox) updated packages
+
 ### 0.0.2 (2015-10-28)
 - (bluefox) update plugin
 
@@ -23,5 +31,5 @@ Additionally, you can add to widget class `keyboard-num` to force using numeric 
 - (smiling_Jack) initial checkin
 
 ## License
- Copyright (c) 2015-2016 smiling_Jack
+ Copyright (c) 2015-2025 smiling_Jack
  MIT
