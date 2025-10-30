@@ -21,7 +21,7 @@ Additionally, you can add to widget class `keyboard-num` to force using numeric 
 	### **WORK IN PROGRESS**
 -->
 ## Changelog
-### **WORK IN PROGRESS**
+### 0.0.3 (2025-10-30)
 - (bluefox) updated packages
 
 ### 0.0.2 (2015-10-28)
