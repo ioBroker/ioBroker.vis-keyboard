@@ -30,6 +30,8 @@ Additionally, you can add to widget class `keyboard-num` to force using numeric 
 ### 0.0.1 (2015-10-21)
 - (smiling_Jack) initial checkin
 
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## License
  Copyright (c) 2015-2026 smiling_Jack
  MIT
